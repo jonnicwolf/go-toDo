@@ -1,6 +1,7 @@
 package main
 
 import "time"
+import "fmt"
 
 type Todo struct {
 	Title string
@@ -9,9 +10,9 @@ type Todo struct {
 	CompletedAt *time.Time
 }
 
-type Toddos []Todo
+type Todos []Todo
 
-funct (todos *Todos) add(title string) {
+func (todos *Todos) add(title string) {
 	todo := Todo{
 		Title: title,
 		Completed: false,
@@ -33,14 +34,14 @@ func (todos *Todos) validateIndex(index int) error {
 	return nil
 }
 
-func (todos *Todos) delet(index int) error {
+func (todos *Todos) delete(index int) error {
 	t := *todos
 	
 	if err := t.validateIndex(index); err != nil {
 		return err
 	}
 
-	*todos = append(t[:index], t[index+1:])...
+	*todos = append(t[:index], t[index+1:]...)
 
 	return nil
 }
