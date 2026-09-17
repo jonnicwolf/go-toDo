@@ -1,14 +1,1 @@
-[
-    {
-        "Title": "but milk",
-        "Completed": true,
-        "CreatedAt": "2026-09-16T11:56:14.875513-04:00",
-        "CompletedAt": "2026-09-16T11:56:14.875514-04:00"
-    },
-    {
-        "Title": "but bread",
-        "Completed": false,
-        "CreatedAt": "2026-09-16T11:56:14.875513-04:00",
-        "CompletedAt": null
-    }
-]
+[]
